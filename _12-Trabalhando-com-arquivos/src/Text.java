@@ -7,21 +7,21 @@ public class Text {
 
     public static void main(String[] args) {
 
-        File file = new File("C:\\Users\\caiom\\Desktop\\Git\\Java\\_12-Trabalhando-com-arquivos\\src\\in.txt");
-        Scanner sc = null;
+        File file = new File("C:\\Users\\caiom\\Desktop\\Git\\Java\\_12-Trabalhando-com-arquivos\\src\\txt\\in.txt");
+        Scanner scan = null;
 
         try {
-            sc = new Scanner(file);
-            while (sc.hasNextLine()) {
-                System.out.println(sc.nextLine());
+            scan = new Scanner(file);
+            while (scan.hasNextLine()) {
+                System.out.println(scan.nextLine());
             }
         }
         catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
         finally {
-            if (sc != null) {
-                sc.close();
+            if (scan != null) {
+                scan.close();
             }
         }
     }

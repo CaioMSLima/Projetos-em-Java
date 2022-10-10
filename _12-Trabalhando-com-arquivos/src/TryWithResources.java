@@ -6,7 +6,7 @@ public class TryWithResources {
 
     public static void main(String[] args) {
 
-        String path = "C:\\Users\\caiom\\Desktop\\Git\\Java\\_12-Trabalhando-com-arquivos\\src\\in.txt";
+        String path = "C:\\Users\\caiom\\Desktop\\Git\\Java\\_12-Trabalhando-com-arquivos\\src\\txt\\in.txt";
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
 
